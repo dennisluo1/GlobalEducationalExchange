@@ -1,0 +1,60 @@
+header {
+  font-size: 40px;
+  margin-top: 35px;
+  margin-left: 20px;
+}
+ 
+body {
+  min-height: 100vh;
+  display: flex;
+  font-size: 18px;
+  font-family: arial;
+  line-height: 1.4em;
+  flex-direction: column;
+}
+
+nav {
+  margin-top: 35px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 150px;
+  max-width: 80vw;
+  margin: auto;
+}
+
+nav ul li a {
+  padding: 15px 30px;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  transition: 0.2s all;
+  display: block;
+}
+
+nav ul li:hover a {
+  background-color: orange;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
