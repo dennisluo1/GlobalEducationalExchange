@@ -16,10 +16,10 @@ Global.findById = (id) => {
 Global.create = (global) => {
   return db.one(`
     INSERT INTO globals
-    (title, cost, category, description)
-    VALUES ($1, $2, $3, $4)
+    (title, cost, category, description, deadline)
+    VALUES ($1, $2, $3, $4, $5)
     RETURNING *
-  `, [global.title, global.cost, global.category, global.description]);
+  `, [global.title, global.cost, global.category, global.description, global.deadline]);
 }
 
 Global.update = (global, id) => {
@@ -28,10 +28,11 @@ Global.update = (global, id) => {
     title = $1,
     cost = $2,
     category = $3,
-    description = $4
-    WHERE id = $5
+    description = $4,
+    deadline = $5
+    WHERE id = $6
     RETURNING *
-  `, [global.title, global.cost, global.category, global.description, id]);
+  `, [global.title, global.cost, global.category, global.description, global.deadline, id]);
 }
 
 Global.destroy = (id) => {

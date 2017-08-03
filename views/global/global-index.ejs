@@ -1,0 +1,30 @@
+<!--This is the page that will contain the funding raising tables-->
+<% include ../partials/boilerplate %>
+
+<!--<div class='hero'>
+  <h1>All Fund-Raising Listings</h1>
+</div>
+
+  <div class='global-container'>
+    <% for (let global of data) { %>
+      <div class='global'>
+        <h2><%= global.title %></h2>
+        <h3><%= global.cost %></h3>
+        <h3><%= global.category %></h3>
+        <h3><%= global.description %></h3>        
+        <div class='links'>
+          <a class='linkto' href='/global/<%= global.id%>'>Learn more</a>
+          <form method='POST' action='/global/<%= global.id %>?_method=DELETE'>
+            <input type='submit' value='Delete listing' />
+          </form>
+        </div>
+      </div>
+    <% } %>
+  </div>-->
+    <% for (let globals of data) { %>
+        <div class='globals'>
+            <h1><%= global.title %></h1>
+            <a href='/global/<%= global.id%>'>Learn more</a>
+        </div>
+    <% } %>
+<% include ../partials/end %>

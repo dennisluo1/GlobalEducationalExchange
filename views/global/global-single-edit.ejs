@@ -1,0 +1,12 @@
+<!--This will allow the inputs from the table-->
+<% include ../partials/boilerplate %>
+
+<form method='POST' action='/globals/<%= data.id %>?_method=PUT'>
+  <input name='title' type='text' value='<%= data.title %>' />
+  <input name='cost' type='number' value='<%= data.cost %>' />
+  <input name='category' type='text' value='<%= data.category %>' />
+  <input name='description' type='text' value='<%= data.description %>' />
+  <input type='submit' value='Edit it!' />
+</form>
+ 
+<% include ../partials/end %>

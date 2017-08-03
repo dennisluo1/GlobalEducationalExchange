@@ -1,0 +1,27 @@
+<% include ../partials/boilerplate %>
+
+<form method='POST' action='/global'>
+  <input name='title' type='text' placeholder='title' />
+  <input name='cost' type='number' placeholder='cost' />
+  <input name='category' type='text' placeholder='category'>
+  <input name='description' type='text' placeholder='description'> 
+  <input type='submit' value='Submit!' />
+</form>
+
+<% for (let globals of data) { %>
+    <div class="globals-data-container">
+        <div class='globals-title'>
+            <h1><%= globals.title %></h1>
+        </div>
+        <div class='globals-cost'>
+            <h1><%= globals.cost %></h1>
+        </div>
+        <div class='globals-category'>
+            <h1><%= globals.category %></h1>
+        </div>
+        <div class='globals-description'>
+            <h1><%= globals.description %></h1>
+        </div>
+    </div>
+    <% } %>
+<% include ../partials/end %>
