@@ -52,7 +52,7 @@ app.get('/', (req, res) => {
 const globalRoutes = require('./routes/global-routes');
 app.use('/globals', globalRoutes);
 
-// Error handler!
+// Error handler
 app.get('*', (req, res) => {
     res.status(404).send('not found!');
 });
