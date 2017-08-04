@@ -8,3 +8,6 @@ CREATE TABLE IF NOT EXISTS users(
     firstname VARCHAR(255),
     lastname VARCHAR(255)
 );
+
+ALTER TABLE globals
+ADD COLUMN user_id INTEGER REFERENCES users(id);

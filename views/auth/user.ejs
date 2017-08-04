@@ -1,0 +1,13 @@
+<% include ../partials/boilerplate %>
+
+  <div class='container'>
+      <h1>Hi, <%= user.firstname%> <%= user.lastname%>!</h1>
+      <p class='email'><%= user.email%></p>
+      <p>You are currently signed in</p>
+      <form action='/global/add'>
+          <input type="submit" value="Hey there!" />
+      </form>
+
+  </div>
+
+<% include ../partials/end %>

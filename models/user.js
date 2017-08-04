@@ -18,4 +18,11 @@ User.create = user => {
   `, [user.username, user.email, user.password_digest, user.firstname, user.lastname]);
 };
 
+User.findUserGlobals=id=>{
+    return db.manyOrNone(`
+    SELECT * FROM globals
+    WHERE user_id=$1
+    `,[id]);
+};
+
 module.exports = User;

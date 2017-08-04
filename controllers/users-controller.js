@@ -5,13 +5,13 @@ const usersController={};
 
 usersController.index=(req,res)=>{
     console.log('usersController');
-    User.findUserTodolist(req.user.id)
-    .then(todolist=>{
+    User.findUserGlobals(req.user.id)
+    .then(globals=>{
         res.render('auth/user',{
             currentPage:'index',
             message:'ok',
             user:req.user,
-            data:todolist,
+            data:globals,
         });
     }).catch(err=>{
         console.log(err);

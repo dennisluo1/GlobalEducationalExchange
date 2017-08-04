@@ -8,11 +8,3 @@ CREATE TABLE IF NOT EXISTS globals (
   description TEXT,
   deadline VARCHAR(255)
 );
-
--- CREATE TABLE IF NOT EXISTS events (
---   id SERIAL PRIMARY KEY,
---   title VARCHAR(255),
---   day VARCHAR(255),
---   category VARCHAR(255),
---   description TEXT,
--- );

@@ -51,6 +51,10 @@ app.get('/', (req, res) => {
 // Require the global routes & tell the app to use them
 const globalRoutes = require('./routes/global-routes');
 app.use('/globals', globalRoutes);
+const authRoutes=require('./routes/auth-routes');
+app.use('/auth',authRoutes);
+const userRoutes=require('./routes/user-routes');
+app.use('/user',userRoutes);
 
 // Error handler
 app.get('*', (req, res) => {
