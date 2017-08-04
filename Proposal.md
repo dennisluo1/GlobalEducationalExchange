@@ -40,6 +40,7 @@ The app will require a database 'users_table' with tables called:
     * cost VARCHAR,
     * category VARCHAR,
     * description VARCHAR,
+    * deadline VARCHAR
 
 
 ## Use of API Key to retrieve donation causes
@@ -49,19 +50,20 @@ For each donation causes I plan on creating a table that allows users to fill ou
 * title, 
 * cost, 
 * category, 
-* description
+* description,
+* deadline
 
 ## Phases of Completion
 
 * Phase -5: Create folders and necessary files 
 * Phase -4: Set up database with tables
 * Phase -3: Set up MVC  
-* Phase -2: Use API key 
-* Phase -1: Set up user verification 
-* Phase 0: Work on CSS styling of app 
-* Phase 1: Complete Global Educational Exchange donation app
+* Phase -2: Set up basic layout of page 
+* Phase -1: Set up Auth/login 
+* Phase 0: Use API key 
+* Phase 1: Work on CSS
 * Phase 2: Make final edits 
-* Phase 3: Deploy app to Heroku 
+* Phase 3: Deploy app through Heroku
 
 
 ## Resources

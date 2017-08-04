@@ -1,6 +1,7 @@
 const express = require('express');
 const globalRoutes = express.Router();
 
+
 const globalsController = require('../controllers/globals-controller');
 
 
@@ -8,6 +9,7 @@ globalRoutes.get('/', globalsController.index);
 globalRoutes.post('/', globalsController.create);
 
 globalRoutes.get('/add', globalsController.index);
+// Need to add the authHelp route
 
 globalRoutes.get('/:id', globalsController.show);
 globalRoutes.get('/:id/edit', globalsController.edit);
