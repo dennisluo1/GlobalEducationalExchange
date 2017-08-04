@@ -10,15 +10,16 @@
       <h3><%= data.cost %></h3>
       <h3><%= data.category %></h3>
       <h3><%= data.description %></h3>
+      <h3><%= data.deadline %></h3>
       <div class='links'>
-        <a href='/global/<%= data.id %>/edit'>Edit Listing</a>
-        <form method='POST' action='/global/<%= data.id %>?_method=DELETE'>
+        <a href='/globals/<%= data.id %>/edit'>Edit Listing</a>
+        <form method='POST' action='/globals/<%= data.id %>?_method=DELETE'>
           <input type='submit' value='Delete' />
         </form>
       </div>
       </div>
       <div class='linkback'>
-        <a class='seeall' href='/global/'>See all listings</a>
+        <a class='seeall' href='/globals/'>See all listings</a>
       </div>
   </div>
     

@@ -49,6 +49,23 @@ nav ul li:hover a {
   text-align: center;
 }
 
+.globals-data-container {
+  flex: 1;
+  padding: 10px;
+  margin: 10px;
+  background-color: #933721;
+  box-sizing: border-box;
+  max-height: 200px;
+  max-width: 80%;
+  cursor: pointer;
+  transition: 0.2s;
+  text-align: center;
+}
+
+.globals-title {
+  font-weight: bold;
+  font-size: 30px; 
+}
 
 
 

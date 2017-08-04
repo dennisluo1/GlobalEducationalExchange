@@ -38,7 +38,7 @@ globalsController.create = (req, res) => {
     description: req.body.description,
     deadline: req.body.deadline,
   }).then(() => {
-    res.redirect('/global');
+    res.redirect('/globals');
   }).catch(err => {
     console.log(err);
     res.status(500).json(err);
@@ -53,7 +53,7 @@ globalsController.update = (req, res) => {
     description: req.body.description,
     deadline: req.body.deadline,
   }, req.params.id).then(globals => {
-    res.redirect(`/global/${req.params.id}`);
+    res.redirect(`/globals/${req.params.id}`);
   }).catch(err => {
     console.log(err);
     res.status(500).json(err);
@@ -76,7 +76,7 @@ globalsController.edit = (req, res) => {
 globalsController.delete = (req, res) => {
   Global.destroy(req.params.id)
     .then(() => {
-      res.redirect('/global');
+      res.redirect('/globals');
     }).catch(err => {
       console.log(err);
       res.status(500).json(err);
