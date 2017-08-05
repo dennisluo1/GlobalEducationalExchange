@@ -41,10 +41,10 @@ app.listen(port, () => {
 // This is the index route
 app.get('/', (req, res) => {
   res.render('index', {
-    message: 'Welcome',
+    message: 'Build bridges. Connect the world.',
     currentPage: 'home',
     documentTitle: 'Global Educational Exchange',
-    subTitle: 'Building bridges to connecting the world',
+    subTitle: 'Building bridges. Connect the world.',
   });
 });
 

@@ -1,11 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Karla');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+/*font-family: 'Karla', sans-serif;*/
+/*font-family: 'Josefin Sans', sans-serif;*/
+
 header {
-  font-size: 40px;
-  margin-top: 35px;
-  margin-left: 20px;
+  margin-top: 45px;
+  margin-left: 25px;
+  font-family: 'Karla', sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #3a7bd5;
 }
  
 body {
-  /*background: url('../images/photo1.jpg') no-repeat;*/
   background-size: cover;
   min-height: 100vh;
   display: flex;
@@ -17,6 +24,7 @@ body {
 
 nav {
   margin-top: 35px;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 nav ul {
@@ -29,49 +37,152 @@ nav ul {
 
 nav ul li a {
   padding: 15px 30px;
-  color: black;
+  color: #001f3f;
   text-transform: uppercase;
-  font-weight: 900;
+  font-weight: bold;
   letter-spacing: 0.5px;
   text-decoration: none;
   transition: 0.2s all;
   display: block;
+  font-size: 15px;
 }
+
 
 nav ul li:hover a {
-  background-color: orange;
+  color: orange;
 }
 
-.container {
+.message {
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+  font-size: 50px;
+  color: green;
 }
 
 .globals-data-container {
   flex: 1;
   padding: 10px;
-  margin: 10px;
+  margin: auto;
+  margin-top: 35px;
   background-color: #933721;
   box-sizing: border-box;
-  max-height: 200px;
+  max-height: 250px;
   max-width: 80%;
   cursor: pointer;
   transition: 0.2s;
   text-align: center;
+}
+.input-buttons {
+  text-align: center;
+  display: inline-block;
+  border-radius: 5px 5px;
 }
 
 .globals-title {
   font-weight: bold;
   font-size: 30px; 
 }
+/* Sourced CSS from Coverr: https://coverr.co/ */
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: absolute;
+    background-size: contain;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    font-size: 50px;
+    margin-top: 370px; 
+    margin-left: 340px;
+    color: white;
+    /*background: rgba(0, 0, 0, 0.4);*/
+    /*width: 100%;*/
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+}
 
+.slogan {
+  color: black;
+  font-size: 40px;
+}
+/* The buttons */
+form {
+  width: 50vw;
+  padding: 50px;
+  box-sizing: border-box;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #eee;
+}
 
+form input[type=text] {
+  border: 3px solid skyblue;
+  font-size: 12px;
+  font-family: poppins, sans-serif;
+  margin: 5px 0;
+  padding: 2px;
+  display: block;
+  width: 100%;
+  transition: 0.3s;
+}
 
+form input[type=text]:focus {
+  border-bottom: 3px solid #933721;
+  outline: 0;
+}
 
+form input[type=submit] {
+  background-color: orange;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  padding: 5px 10px;
+  font-size: 10px;
+  color: white;
+  font-weight: 900;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form input[type=submit]:hover, form input[type=submit]:focus {
+  outline: 0;
+  background-color: #933721;
+} 
 
 
 
