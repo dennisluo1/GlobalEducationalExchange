@@ -3,16 +3,16 @@
 <nav>
   <ul>
     <li><a href='/'>Home</a></li>
-    <li><a href='/country'>Country</a></li> 
+    <li><a href='/country'>Country Info</a></li> 
     <!--<li><a href='/globals'>Donate</a></li> -->
     <li><a href='/globals/add'>Fund Raise</a></li>
-    <li><a href='/auth/register'>Register</a></li>
+    <li><a href='/auth/register'><span class='current-tab'>Register</span></a></li>
     <li><a href='/auth/login'>Login</a></li>
     <li><a href='/user'>My Profile</a></li>
     <li><a href='/auth/logout'>Logout</a></li>
   </ul>
 </nav>
-<div class='container'>
+<div class='register-container'>
   <form method='POST' action='/auth/register'>
     <input name='username' type='text' placeholder='username' required />
     <input name='email' type='email' placeholder='email' required />

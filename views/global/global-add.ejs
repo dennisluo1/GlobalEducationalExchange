@@ -1,11 +1,12 @@
+<!--This is the Fund Raise page-->
 <% include ../partials/boilerplate %>
 <header>Global Educational Exchange</header>
 <nav>
   <ul>
     <li><a href='/'>Home</a></li>
-    <li><a href='/country'>Country</a></li> 
+    <li><a href='/country'>Country Info</a></li> 
     <!--<li><a href='/globals'>Donate</a></li> -->
-    <li><a href='/globals/add'>Fund Raise</a></li>
+    <li><a href='/globals/add'><span class='current-tab'>Fund Raise</span></a></li>
     <li><a href='/auth/register'>Register</a></li>
     <li><a href='/auth/login'>Login</a></li>
     <li><a href='/user'>My Profile</a></li>
@@ -13,7 +14,7 @@
   </ul>
 </nav>
 <div class='input-buttons'>
-<form method='POST' action='/globals'>
+<form method='POST' action='/globals' class='fund-raise-container'>
   <input name='title' type='text' placeholder='title' />
   <input name='cost' type='number' placeholder='cost' />
   <input name='category' type='text' placeholder='category'>
@@ -24,29 +25,35 @@
 </div>
 <% for (let globals of data) { %>
     <div class='globals-data-container'>
-        <div class='globals-title'>
-            <h1><%= globals.title %></h1>
+        <div class='submit-container'>
+            <div class='globals-title'>
+                <h1><%= globals.title %></h1>
+            </div>
+            <div class='globals-cost'>
+                <h1><%= globals.cost %></h1>
+            </div>
+            <div class='globals-category'>
+                <h1><%= globals.category %></h1>
+            </div>
+            <div class='globals-description'>
+                <h1><%= globals.description %></h1>
+            </div>
+            <div class='globals-deadline'>
+                <h1><%= globals.deadline %></h1>
+            </div>
         </div>
-        <div class='globals-cost'>
-            <h1><%= globals.cost %></h1>
-        </div>
-        <div class='globals-category'>
-            <h1><%= globals.category %></h1>
-        </div>
-        <div class='globals-description'>
-            <h1><%= globals.description %></h1>
-        </div>
-        <div class='globals-deadline'>
-            <h1><%= globals.deadline %></h1>
-        </div>
+
         <div class='buttons'>
-            <form method='POST' action='/globals/<%= globals.id %>?_method=DELETE'>
-                <input type='delete' value='Delete' />
+            <form method='POST' action='/globals/<%= globals.id %>?_method=DELETE' class='delete-button'>
+                <input type='submit' value='Delete' />
             </form>
-            <form method='GET' action='/globals/<%= globals.id %>/?_method=POST'>
+            <form method='GET' action='/globals/<%= globals.id %>/?_method=POST' class='edit-button'>
                 <input type='submit' value='Edit' />
             </form>
-        </div>        
+        </div> 
+       
     </div>
+
+
     <% } %>
 <% include ../partials/end %>

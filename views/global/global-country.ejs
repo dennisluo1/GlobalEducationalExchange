@@ -1,19 +1,26 @@
+<!-- Country Info Page-->
 <% include ../partials/boilerplate %>
 <header>Global Educational Exchange</header>
+
 <nav>
   <ul>
     <li><a href='/'>Home</a></li>
-    <li><a href='/country'>Country</a></li> 
+    <li><a href='/country'><span class='current-tab'>Country Info</span></a></li> 
     <!--<li><a href='/globals'>Donate</a></li> -->
-    <li><a href='/globals/add'>Fund Raise</a></li>
+    <li><a href='globals/add'>Fund Raise</a></li>
     <li><a href='/auth/register'>Register</a></li>
     <li><a href='/auth/login'>Login</a></li>
     <li><a href='/user'>My Profile</a></li>
     <li><a href='/auth/logout'>Logout</a></li>
   </ul>
 </nav>
-<form method='POST' action='/country'>
-    <input type="text" name='country' placeholder="search">
-</form>
+<div class='country-container'>
+    <form method='POST' action='/country'>
+        <div class='search-country'>Search Country</div>
+        </br>
+        <input type="text" name='country' placeholder="search">
+        <input type='submit' value='enter' />
+    </form>
+</div>
 
 <% include ../partials/end %>

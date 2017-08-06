@@ -3,7 +3,7 @@
 <nav>
   <ul>
     <li><a href='/'>Home</a></li>
-    <li><a href='/country'>Country</a></li> 
+    <li><a href='/country'>Country Info</a></li> 
     <!--<li><a href='/globals'>Donate</a></li> -->
     <li><a href='/globals/add'>Fund Raise</a></li>
     <li><a href='/auth/register'>Register</a></li>
@@ -16,23 +16,23 @@
 </div>
 
 
-  <div class='global-container'>
-    <div class='global'>
-      <h2><%= data.title %></h2>
-      <h3><%= data.cost %></h3>
-      <h3><%= data.category %></h3>
-      <h3><%= data.description %></h3>
-      <h3><%= data.deadline %></h3>
-      <div class='links'>
-        <a href='/globals/<%= data.id %>/edit'>Edit Listing</a>
-        <form method='POST' action='/globals/<%= data.id %>?_method=DELETE'>
-          <input type='submit' value='Delete' />
-        </form>
-      </div>
-      </div>
-      <div class='linkback'>
-        <a class='seeall' href='/globals/'>See all listings</a>
-      </div>
+<div class='global-container'>
+  <div class='global'>
+    <h2><%= data.title %></h2>
+    <h3><%= data.cost %></h3>
+    <h3><%= data.category %></h3>
+    <h3><%= data.description %></h3>
+    <h3><%= data.deadline %></h3>
+    <div class='links'>
+      <a href='/globals/<%= data.id %>/edit'>Edit Listing</a>
+      <form method='POST' action='/globals/<%= data.id %>?_method=DELETE'>
+        <input type='submit' value='Delete' />
+      </form>
+    </div>
   </div>
+    <div class='linkback'>
+      <a class='seeall' href='/globals/'>See all listings</a>
+    </div>
+</div>
     
 <% include ../partials/end %>
