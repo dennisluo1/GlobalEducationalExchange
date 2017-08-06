@@ -7,7 +7,7 @@ const globalsHelpers = require('../services/education/education-helper');
 
 globalRoutes.get('/', globalsController.index);
 
-globalRoutes.post('/country', globalsHelpers.getCountryData);
+globalRoutes.post('/country/info', globalsHelpers.getCountryData);
 globalRoutes.post('/', globalsController.create);
 
 globalRoutes.get('/add', globalsController.index);

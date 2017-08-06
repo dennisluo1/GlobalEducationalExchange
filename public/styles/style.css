@@ -125,7 +125,8 @@ form {
   margin: auto;
   display: flex;
   flex-direction: column;
-  border: 3px solid #eee;
+  /*border: 3px solid #eee;*/
+  opacity: .8;
 }
 
 form input {
@@ -138,11 +139,6 @@ form input {
   width: 100%;  
   transition: 0.3s;
 }
-
-/*form input:focus {
-  border-bottom: 3px solid orange;
-  outline: 0;
-}*/
 
 form input[type=submit] {
   background-color: #3a7bd5;
@@ -166,16 +162,44 @@ form input[type=submit]:hover, form input[type=submit]:focus {
 
 
 /* Country Info Page */
+.country-body {
+  background: url('../images/twobridges.jpg');
+  background-size: 100%; 
+  padding: 200px; 
+}
 .country-container {
   margin: auto;
   color: #3a7bd5;
+  opacity: .8;
 }
 
 .search-country {
   font-size: 25px; 
 }
 
+/* Country Info Display Page */
+.country-info-body {
+  background: url('../images/twobridges.jpg') no-repeat;
+  background-size: 100%;
+  padding: 300px;
+}
+
+.country-information {
+  text-align: center;
+  margin-top: -100px;
+  font-family: Karla;
+}
+
+.country-name {
+  font-size: 35px;
+  font-weight: bold;
+}
+
 /* Fund Raising Page */
+.fund-raise-body {
+  background: url('../images/sky.jpg');
+  background-size: 100%;
+}
 .register-container {
   color: blue;
 }
@@ -213,7 +237,7 @@ form input[type=submit]:hover, form input[type=submit]:focus {
   padding: 10px;
   margin: auto;
   margin-top: 35px;
-  background-color: #40E0D0;
+  /*background-color: #AFEEEE;*/
   box-sizing: border-box;
   border: 1px solid;
   max-height: auto;
@@ -222,10 +246,7 @@ form input[type=submit]:hover, form input[type=submit]:focus {
   transition: 0.2s;
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
-  opacity: .7;
-}
-.fund-raise-container {
-  background-color: #40E0D0;
+  color: white;
 }
 
 .globals-title {
@@ -243,8 +264,19 @@ form input[type=submit]:hover, form input[type=submit]:focus {
 .globals-description {
   margin-top: 35px;
 }
+/* Register page */
+.register-body {
+  background: url('../images/evening.jpg');
+  background-size: 100%;
+  padding: 150px;
+}
 
-
+/* Login Page */
+.login-body {
+  background: url('../images/rooftop.jpg');
+  background-size: 100%;
+  padding: 200px;  
+}
 
 /* My Profile page, user.js */
 .login-container {

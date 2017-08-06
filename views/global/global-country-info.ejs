@@ -1,0 +1,27 @@
+<!-- Country Info Display Page-->
+<% include ../partials/boilerplate %>
+<header>Global Educational Exchange</header>
+
+<nav>
+  <ul>
+    <li><a href='/'>Home</a></li>
+    <li><a href='/country'><span class='current-tab'>Country Info</span></a></li> 
+    <!--<li><a href='/globals'>Donate</a></li> -->
+    <li><a href='globals/add'>Fund Raise</a></li>
+    <li><a href='/auth/register'>Register</a></li>
+    <li><a href='/auth/login'>Login</a></li>
+    <li><a href='/user'>My Profile</a></li>
+    <li><a href='/auth/logout'>Logout</a></li>
+  </ul>
+</nav>
+
+<div class='country-info-body'>
+    <div class='country-information'>
+        <div class='country-name'><%= data[0].Name %></div></br>
+        <div class='country-region'><%= data[0].Region %></div></br>
+        <div class='country-currency-name'><%= data[0].CurrencyName %></div></br>
+        <div class='country-currency-symbol'><%= data[0].CurrencySymbol %></div></br>
+        <img class='flag-symbol' src=<%= data[0].Flag %> height='100' width='100'>
+    </div>
+</div>
+<% include ../partials/end %>

@@ -14,13 +14,15 @@
     <li><a href='/auth/logout'>Logout</a></li>
   </ul>
 </nav>
+<div class='country-body'>
+
 <div class='country-container'>
-    <form method='POST' action='/country'>
+    <form method='POST' action='/globals/country/info'>
         <div class='search-country'>Search Country</div>
         </br>
         <input type="text" name='country' placeholder="search">
         <input type='submit' value='enter' />
     </form>
 </div>
-
+</div>
 <% include ../partials/end %>
