@@ -291,6 +291,19 @@ form input[type=submit]:hover, form input[type=submit]:focus {
   font-weight: bold;
 }
 
+/* Global single page*/
+.global-container {
+  background: url('../images/sky.jpg');
+  background-size: 100%;
+  padding: 250px;
+  text-align: center;  
+}
+.global {
+  font-family: Karla;
+}
+.global-title {
+  font-size: 30px;
+}
 
 
 

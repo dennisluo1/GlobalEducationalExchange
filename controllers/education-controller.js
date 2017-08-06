@@ -6,11 +6,5 @@ educationController.index = (req, res) => {
   });
 }
 
-// educationController.sendApiWeather = (req, res) => {
-//   res.json({ 
-//     message: `Weather for ${req.params.zip}`,
-//     // Should have another property with weather for the requested zip
-//   })
-// }
 
 module.exports = educationController;

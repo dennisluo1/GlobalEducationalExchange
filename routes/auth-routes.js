@@ -4,11 +4,6 @@ const passport=require('../services/auth/local');
 const authHelpers=require('../services/auth/auth-helpers');
 const usersController=require('../controllers/users-controller');
 
-// authRouter.get('/',authHelpers.loginRedirect,(req,res)=>{
-//     res.render('auth/login-or-register',{
-//         currentPage:'login-or-register',
-//     });
-// });
 
 authRouter.get('/login',authHelpers.loginRedirect,(req,res)=>{
     res.render('auth/login',{
