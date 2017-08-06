@@ -1,8 +1,8 @@
-const options = {
-  query: (e) => {
-    console.log(e.query);
-  }
-};
+// const options = {
+//   query: (e) => {
+//     console.log(e.query);
+//   }
+// };
 
 // This is Local *****
 // const pgp = require('pg-promise')(options);
@@ -18,6 +18,10 @@ const options = {
 //     return pgp(process.env.DATABASE_URL);
 //   }
 // }
+
+// const db = setDatabase();
+
+// module.exports = db;
 
 const pgp = require('pg-promise')();
 
@@ -35,6 +39,3 @@ if (process.env.NODE_ENV === 'development' || !process.env.NODE_ENV) {
 
 module.exports = db;
 
-const db = setDatabase();
-
-module.exports = db;
