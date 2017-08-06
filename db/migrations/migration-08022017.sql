@@ -1,4 +1,4 @@
-\c global_educational_data
+-- \c global_educational_data
 
 CREATE TABLE IF NOT EXISTS globals (
   id SERIAL PRIMARY KEY,

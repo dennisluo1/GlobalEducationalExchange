@@ -1,2 +1,2 @@
-\c global_educational_data
+-- \c global_educational_data
 \i global.sql
