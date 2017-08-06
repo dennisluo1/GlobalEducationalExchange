@@ -12,14 +12,9 @@
     <li><a href='/auth/logout'>Logout</a></li>
   </ul>
 </nav>
-<div class='login-container'>
-    <h1>Hi, <%= user.firstname%> <%= user.lastname%>!</h1>
-    <p class='email'><%= user.email%></p>
-    <p>You are currently signed in</p>
-    <form action='/global/add'>
-        <input type="submit" value="Hey there!" />
-    </form>
-
+<div class='user-body'>
+  <div class='login-container'>
+      <h1>Hi, <%= user.firstname%> <%= user.lastname%>! You are currently signed in :)</h1>
+  </div>
 </div>
-
 <% include ../partials/end %>
