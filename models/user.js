@@ -1,14 +1,14 @@
 const db = require('../db/config');
 
 const User = {};
-
+// This is the My Profile page
 User.findByUserName = userName => {
   return db.oneOrNone(`
     SELECT * FROM users
     WHERE username = $1
   `, [userName]);
 };
-
+// Creating new my profile
 User.create = user => {
   return db.one(`
     INSERT INTO users

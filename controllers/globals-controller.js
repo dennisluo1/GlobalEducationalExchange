@@ -15,7 +15,7 @@ globalsController.index = (req, res) => {
       res.status(500).json(err);
     })
 };
-
+// Render to global-single page
 globalsController.show = (req, res) => {
   Global.findById(req.params.id)
     .then(globals => {
@@ -29,7 +29,7 @@ globalsController.show = (req, res) => {
       res.status(500).json(err);
     });
 };
-
+// Creating a new fund-raising table
 globalsController.create = (req, res) => {
   Global.create({
     title: req.body.title,
@@ -44,7 +44,7 @@ globalsController.create = (req, res) => {
     res.status(500).json(err);
   });
 };     
-
+// This is to update the fund raising
 globalsController.update = (req, res) => {
   Global.update({
     title: req.body.title,
@@ -59,7 +59,7 @@ globalsController.update = (req, res) => {
     res.status(500).json(err);
   });
 };
-
+// Edit page
 globalsController.edit = (req, res) => {
   Global.findById(req.params.id)
     .then(globals => {
@@ -72,7 +72,7 @@ globalsController.edit = (req, res) => {
       res.status(500).json(err);
     });
 }
-
+// Delete the item
 globalsController.delete = (req, res) => {
   Global.destroy(req.params.id)
     .then(() => {

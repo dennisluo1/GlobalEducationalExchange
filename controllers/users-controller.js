@@ -18,7 +18,7 @@ usersController.index=(req,res)=>{
         res.status(500).json({err:err});
     });
 }
-
+// Login page to register for an account
 usersController.create=(req,res)=>{
     const salt=bcrypt.genSaltSync();
     const hash=bcrypt.hashSync(req.body.password,salt);

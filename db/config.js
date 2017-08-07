@@ -23,6 +23,8 @@
 
 // module.exports = db;
 
+
+// This is pg-promise but for Heroku 
 const pgp = require('pg-promise')();
 
 let db;
