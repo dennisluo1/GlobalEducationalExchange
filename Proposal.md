@@ -13,13 +13,11 @@ At the moment, I am building a platform to allow users to sign up and donate mon
 
 Login screen
 
-<img src="images/loginwf.jpg">
+![](./wireframes/loginwf.jpg)
 
-This is the register/login page.
+This is the fund-raising page that allows users to select which causes they want to support. 
 
-<img src="images/donatewf.jpg">
-
-This is the donate page that allows users to select which causes they want to support.
+![](./wireframes/donatewf.jpg)
 
 
 ## Database
@@ -34,7 +32,7 @@ The app will require a database 'users_table' with tables called:
     * email VARCHAR UNIQUE NOT NULL,
     * password_digest TEXT NOT NULL
 
-* 'donate-table' with the following columns: 
+* 'globals-table' with the following columns: 
     * id SERIAL PRIMARY KEY,
     * title VARCHAR,
     * cost VARCHAR,
@@ -68,4 +66,4 @@ For each donation causes I plan on creating a table that allows users to fill ou
 
 ## Resources
  
-I will be using an API key from ProgrammableWeb that takes this key from an organization called DonorsChoose.org
+I will be using an API key from CountryAPI: https://fabian7593.github.io/CountryAPI/
